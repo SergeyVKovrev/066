@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         My new bot mail.ru
+// @name         My new bot nigma
 // @namespace    http://tampermonkey.net/
 // @version      1.00
 // @description  bot for mail
