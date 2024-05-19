@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задание 17</title>
+  </head>
+
+  <!--Задание:
+    Создать массив, занести в него десять элементов по принципу: "фамилия" - "дата рождения". Удалить из массива всех людей, родившихся летом. Формат записи даты 18 april 1956. Вывести массив до удаления и после удаления в консоль, каждый с новой строки. Пример записи исходных данных:
+[
+      {
+        name: "Ivanov",
+        date: "18 april 1956"
+      },
+      {
+        name: "Petrov",
+        date: "18 may 1998"
+      },
+] -->
+
+  <body>
+    <script>
+      const man = [
+        {
+          name: "Lomonosov",
+          date: "19 November 1711",
+        },
+        {
+          name: "Derjavin",
+          date: "14 Jule 1743",
+        },
+        {
+          name: "Radishev",
+          date: "31 August 1749",
+        },
+        {
+          name: "Karamzin",
+          date: "12 December 1766",
+        },
+        {
+          name: "Krylov",
+          date: "13 February 1769",
+        },
+        {
+          name: "Jukovsky",
+          date: "09 February 1783",
+        },
+        {
+          name: "Griboedov",
+          date: "15 January 1775",
+        },
+        {
+          name: "Pushkin",
+          date: "06 June 1799",
+        },
+        {
+          name: "Lermontov",
+          date: "15 October 1814",
+        },
+        {
+          name: "Gogol",
+          date: "20 March 1809",
+        },
+      ];
+
+      for (let i = 0; i < man.length; i++) {
+        console.log(man[i].name + " - " + man[i].date);
+      }
+
+      console.log("_____________________________________________________");
+      let mans = man.slice();
+
+      mans.splice(0, 1);
+      mans.splice(2, 4);
+      mans.splice(3, 2);
+      for (let i = 0; i < mans.length; i++) {
+        console.log(mans[i].name + " - " + mans[i].date);
+      }
+    </script>
+  </body>
+</html>
